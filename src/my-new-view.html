@@ -3,6 +3,7 @@
 <link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 <link rel="import" href="../bower_components/google-youtube/google-youtube.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 
 <dom-module id="my-new-view">
 
@@ -13,13 +14,25 @@
         display: block;
         padding: 16px;
       }
+      paper-input {
+        margin-bottom: 30px;
+      }
+      paper-button {
+        margin-top: 30px;
+      }
     </style>
+
     <h1>New view</h1>
+
     <paper-slider min="-100" max="100" value="50"></paper-slider>
+
     <paper-checkbox>Yeah bro</paper-checkbox>
+
     <p>some extra stuff here</p>
     <p>some extra stuff THERE</p>
-    <paper-input label="text input" char-counter maxlength="10"></paper-input>
+
+    <paper-input label="text input" char-counter maxlength="10" placeholder="search for cats"></paper-input>
+
     <google-youtube
       video-id="1Qs8cWPE5MA"
       height="270px"
@@ -28,6 +41,8 @@
       start="5"
       autoplay="1">
     </google-youtube>
+
+    <paper-button toggles raised>HondaRoss</paper-button>
   </template>
 
   <!-- Creates the element's prototype and registers it -->
